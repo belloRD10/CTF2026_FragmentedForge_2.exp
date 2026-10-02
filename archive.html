@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fragment Forge II // Archive</title>
+<meta name="description" content="Fragment Forge II, Node 02. The memory chamber.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<span class="sky" data-sky aria-hidden="true"></span>
+<span class="shell" data-orbits aria-hidden="true"></span>
+
+<div class="shell">
+<header class="orbit-nav">
+  <div class="orbit-inner">
+    <div class="mark">
+      <span class="mark-glyph" aria-hidden="true">&#10052;</span>
+      <span>
+        <span class="mark-name">Shadow Archive</span>
+        <span class="mark-sub">Fragment Forge II</span>
+      </span>
+    </div>
+    <nav class="rung" aria-label="Observatory sections">
+      <a href="index.html">Home</a>
+      <a href="observatory.html">Observatory</a>
+      <a class="here" href="archive.html">Archive</a>
+      <a href="console.html">Console</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">Node 02 &middot; Archive</p>
+    <h1>The Memory Chamber</h1>
+    <p class="lead">The archive was built to remember the last recovery session. Something has already been remembered for you.</p>
+  </section>
+
+  <section class="plate">
+    <p class="node-tag">Cold Storage / Local</p>
+    <h2>What The Building Cannot Keep, The Building Remembers</h2>
+    <p>
+      This archive runs with no server and no database. Everything it needs to
+      hold, it borrows from the machine standing in front of it. The moment
+      this chamber was opened, a record was written.
+    </p>
+
+    <div class="engages">
+      <button class="engage" type="button" data-action="inspect">Inspect Archive Memory</button>
+    </div>
+
+    <div class="readout" id="result">Chamber sealed. No read issued.</div>
+
+    <p class="annotation">
+      <b>Archivist note</b>
+      Open Developer Tools, go to Application in Chrome or Storage in Firefox,
+      then open Local Storage for this site. One key belongs to this archive
+      and holds a Base64 value. The record names its own position as
+      <strong>SECOND</strong>.
+    </p>
+  </section>
+</main>
+
+<footer>Archive &middot; Node 02</footer>
+</div>
+
+<script src="assets/forge.js"></script>
+<script src="assets/archive.js"></script>
+</body>
+</html>

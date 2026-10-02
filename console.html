@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fragment Forge II // Console</title>
+<meta name="description" content="Fragment Forge II, Node 03. The shadow terminal.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<span class="sky" data-sky aria-hidden="true"></span>
+<span class="shell" data-orbits aria-hidden="true"></span>
+
+<div class="shell">
+<header class="orbit-nav">
+  <div class="orbit-inner">
+    <div class="mark">
+      <span class="mark-glyph" aria-hidden="true">&#10052;</span>
+      <span>
+        <span class="mark-name">Shadow Archive</span>
+        <span class="mark-sub">Fragment Forge II</span>
+      </span>
+    </div>
+    <nav class="rung" aria-label="Observatory sections">
+      <a href="index.html">Home</a>
+      <a href="observatory.html">Observatory</a>
+      <a href="archive.html">Archive</a>
+      <a class="here" href="console.html">Console</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">Node 03 &middot; Console</p>
+    <h1>The Shadow Terminal</h1>
+    <p class="lead">This panel is almost empty. The terminal underneath it is not.</p>
+  </section>
+
+  <section class="plate">
+    <p class="node-tag">Diagnostic Rig / Standby</p>
+    <h2>Nothing Is Written To This Panel</h2>
+    <p>
+      Press the switch and the rig will rebuild the last piece in memory, then
+      report it somewhere this page cannot display. The panel itself only ever
+      confirms that the scan ran.
+    </p>
+
+    <div class="engages">
+      <button class="engage" type="button" data-action="scan">Run Shadow Scan</button>
+    </div>
+
+    <div class="readout" id="screen">Awaiting diagnostic command.</div>
+
+    <p class="annotation">
+      <b>Terminal note</b>
+      The rebuilt piece never existed in this page's markup. It is produced by
+      JavaScript at the moment the scan fires, and it reports as
+      <strong>LAST</strong>. Open the Developer Tools console before pressing
+      the switch, or call <strong>runShadowScan()</strong> from it yourself.
+    </p>
+  </section>
+</main>
+
+<footer>Console &middot; Node 03</footer>
+</div>
+
+<script src="assets/forge.js"></script>
+<script src="assets/shadow.js"></script>
+<script src="assets/console.js"></script>
+</body>
+</html>

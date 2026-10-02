@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fragment Forge II // Observatory</title>
+<meta name="description" content="Fragment Forge II, Node 01. The silent eyepiece.">
+<link rel="stylesheet" href="assets/forge.css">
+</head>
+<body>
+<span class="sky" data-sky aria-hidden="true"></span>
+<span class="shell" data-orbits aria-hidden="true"></span>
+
+<div class="shell">
+<header class="orbit-nav">
+  <div class="orbit-inner">
+    <div class="mark">
+      <span class="mark-glyph" aria-hidden="true">&#10052;</span>
+      <span>
+        <span class="mark-name">Shadow Archive</span>
+        <span class="mark-sub">Fragment Forge II</span>
+      </span>
+    </div>
+    <nav class="rung" aria-label="Observatory sections">
+      <a href="index.html">Home</a>
+      <a class="here" href="observatory.html">Observatory</a>
+      <a href="archive.html">Archive</a>
+      <a href="console.html">Console</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">Node 01 &middot; Observatory</p>
+    <h1>The Silent Eyepiece</h1>
+    <p class="lead">The instrument is powered, aligned and reporting nothing at all. That is not a fault. That is the design.</p>
+  </section>
+
+  <section class="plate">
+    <p class="node-tag">Optic Assembly / Idle</p>
+    <h2>Nothing To Report</h2>
+
+    <div class="scope" data-scope aria-hidden="true">
+      <span class="mirror"></span>
+      <b>&#10022;</b>
+      <b>&#183;</b>
+      <b>&#10023;</b>
+      <b>&#183;</b>
+      <b>&#10022;</b>
+    </div>
+
+    <p>
+      The eyepiece renders a perfectly ordinary field of stars and nothing
+      else. Whatever the observatory actually recorded was never printed on
+      the glass. It was attached to the instrument housing itself, where the
+      page only has to be read, not rendered.
+    </p>
+
+    <div id="observation"
+         data-order="FIRST"
+         data-integrity="b1f47a20cc"
+         data-fragment="Y3liZXJzdXJmZXJDVEZ7dGgzX2Ywcmcz"></div>
+
+    <p class="annotation">
+      <b>Observatory annotation</b>
+      The eyepiece is a device, and devices are described in markup. Open
+      Developer Tools, go to Elements, and find the element with the
+      identifier <strong>observation</strong>. Read its attributes.
+    </p>
+  </section>
+</main>
+
+<footer>Observatory &middot; Node 01</footer>
+</div>
+
+<script src="assets/forge.js"></script>
+</body>
+</html>
